@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include "components/metadata.html" %}
+  <title>Moody / ?</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icon/angry.ico') }}">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+</head>
+
+<body class="bg-light animated fadeIn">
+  {% include "components/flash-message-error.html" %}
+  <div class="d-flex align-items-center flex-column margin-top-10">
+    <div class="font-raleway-700 title">
+      {{ error_code }}
+    </div>
+    <div class="font-raleway-700 font-38px">
+      {{ error_message }}
+    </div>
+    <div class="font-raleway-700 py-3 my-1">
+      <a class="btn btn-light" href="{{ url_for('index')}}">Get back home</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="../static/js/fade-alert.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include "components/metadata.html" %}
+  <title>Contribute</title>
+</head>
+
+<body class="bg-gradient">
+  {% include "components/flash-message.html" %} {% include "components/navbar.html" %}
+  <div class="col-md-8 offset-md-2 bg-white p-3 my-3 rounded font-roboto-400 font-15px  animated fadeIn">
+    <form method="post">
+      <div class="mb-5 d-flex justify-content-between">
+        <p class="font-roboto-700 font-30px mb-0">Contribute</p>
+        <button class="btn btn-secondary btn-sm font-roboto-400" type="reset">Reset</button>
+      </div>
+      {% if error %}
+      <div class="alert alert-danger" role="alert">
+        {{ error }}
+      </div>
+      {% endif %}
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label font-20px">Select your happy level:</label>
+        <div class="col-sm-7">
+          <!-- happy level -->
+          <select class="form-control" name="happy_level">
+              <option value="5">Cheerful &#x1F606;</option>
+              <option value="4">Happy &#x1F600;</option>
+              <option value="3">Neutral &#x1F610;</option>
+              <option value="2">Sad &#x1F61E;</option>
+              <option value="1">Miserable &#x1F629;</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <p class="font-roboto-700 font-20px mb-0">Book</p>
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <label>Name</label>
+            <input type="text" name="name_book" value="" class="form-control" placeholder="Cuon Theo Chieu Gio" required>
+          </div>
+          <div class="form-group col-md-5">
+            <label>Author</label>
+            <input type="text" name="author_book" value="" class="form-control" placeholder="Nguyen Nhat Anh" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Link</label>
+          <input type="text" name="link_book" value="" class="form-control" placeholder="http://sachvui.com" required>
+        </div>
+        <div class="form-group">
+          <label>Link Image</label>
+          <input type="text" name="link_img_book" value="" class="form-control" placeholder="Optional">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <p class="font-roboto-700 font-20px mb-0">Song</p>
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <label>Name</label>
+            <input type="text" name="name_song" value="" class="form-control" placeholder="Nguoi Am Phu" required>
+          </div>
+          <div class="form-group col-md-5">
+            <label>Artist</label>
+            <input type="text" name="author_song" value="" class="form-control" placeholder="Osad" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Link</label>
+          <input type="text" name="link_song" value="" class="form-control" placeholder="http://mp3.zing.vn" required>
+        </div>
+        <div class="form-group">
+          <label>Link Image</label>
+          <input type="text" name="link_img_song" value="" class="form-control" placeholder="Optional">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <p class="font-roboto-700 font-20px mb-0">Video</p>
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <label>Name</label>
+            <input type="text" name="name_video" value="" class="form-control" placeholder="TÌNH ĐƠN PHƯƠNG ACOUSTIC COVER" required>
+          </div>
+          <div class="form-group col-md-5">
+            <label>Channel</label>
+            <input type="text" name="author_video" value="" class="form-control" placeholder="Duong Edward" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Link</label>
+          <input type="text" name="link_video" value="" class="form-control" placeholder="http://youtube.com" required>
+        </div>
+        <div class="form-group">
+          <label>Link</label>
+          <input type="text" name="link_img_video" value="" class="form-control" placeholder="Optional">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <p class="font-roboto-700 font-20px mb-0">Place</p>
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <label>Name</label>
+            <input type="text" name="name_place" value="" class="form-control" placeholder="Techkids Coding School" required>
+          </div>
+          <div class="form-group col-md-5">
+            <label>Category</label>
+            <input type="text" name="cat_place" value="" class="form-control" placeholder="Education (Optional)">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" name="add_place" value="" class="form-control" placeholder="22C Thanh Cong (Optional)">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success btn-block">Contribute</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="../static/js/fade-alert.js"></script>
+</body>
+
+</html>
