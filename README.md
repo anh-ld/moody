@@ -1,7 +1,5 @@
 # Moody
-A Flask-based project that I made during C4E16 course at Techkids. It suggests books, songs, videos and places based on users' mood.
-
-## Getting Started
+A Flask-based project which suggests books, songs, videos and places based on users' mood.
 
 ### Stack
 
@@ -13,18 +11,18 @@ MongoDB
 
 ### Installation
 
-Download and install Python3
+Install Python3
 
 ```
-https://www.python.org/
+brew install python3
 ```
-Install packages
+Install dependencies
 
 ```
 sudo pip3 install -r requirements.txt
 ```
-## Running
+### Running
 
 ```
-python app.py
+python3 app.py
 ```

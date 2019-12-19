@@ -51,8 +51,8 @@ admin_id = str(admin["id"])
 #                     user_id =admin_id)
 #     new_place.save()
 #
-all_books = Song.objects()
-j = 0
-for i in all_books:
-    j += 1
-    print(j,i['name'])
+# all_books = Song.objects()
+# j = 0
+# for i in all_books:
+#     j += 1
+#     print(j,i['name'])
