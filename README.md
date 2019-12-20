@@ -11,12 +11,12 @@ MongoDB
 
 ### Installation
 
-Install Python3
+Python3
 
 ```
 brew install python3
 ```
-Install dependencies
+Dependencies
 
 ```
 sudo pip3 install -r requirements.txt
@@ -24,5 +24,5 @@ sudo pip3 install -r requirements.txt
 ### Running
 
 ```
-python3 app.py
+python3 index.py
 ```
